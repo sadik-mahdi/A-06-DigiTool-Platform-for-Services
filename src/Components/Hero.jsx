@@ -1,6 +1,7 @@
 import React from 'react';
 import Logo from '../assets/banner.png';
 import { FaRegDotCircle } from 'react-icons/fa';
+import { CiPlay1 } from 'react-icons/ci';
 
 const Hero = () => {
   return (
@@ -16,7 +17,7 @@ const Hero = () => {
           </p>
           <div>
             <button className="btn p-4 rounded-4xl bg-linear-to-r from-[#4f39f6] to-[#9514fa] text-white mr-3"> Explore Products </button>
-            <button className="bg-white text-[#9514fa] border-[#9514fa] btn rounded-4xl">Watch Demo</button>
+            <button className="bg-white text-[#9514fa] border-[#9514fa] btn rounded-4xl"><CiPlay1 />Watch Demo</button>
           </div>
         </div>
         <div className='max-h-140'>

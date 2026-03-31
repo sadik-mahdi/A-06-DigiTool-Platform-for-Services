@@ -5,6 +5,7 @@ import Navbar from './Components/Navbar'
 import Steps from './Components/Steps'
 import Pricing from './Components/Pricing/Pricing'
 import Footer from './Components/Footer/Footer'
+import Footerend from './Components/Footer/Footerend'
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
     <Steps />
     <Pricing />
     <Footer />
+    <Footerend />
     </>
   )
 }
