@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Footerend = () => {
+const FooterEnd = () => {
   return (
     <div className='flex justify-center gap-100 p-10 bg-[#101727]'>
       <div>
@@ -13,4 +13,4 @@ const Footerend = () => {
   );
 };
 
-export default Footerend;
+export default FooterEnd;

@@ -5,7 +5,7 @@ import { FaXTwitter } from 'react-icons/fa6';
 
 const Footer = () => {
   return (
-    <div className="flex items-center justify-centersm:footer-horizontal bg-[#101727] text-neutral-content p-20 w-full border">
+    <div className="flex-row md:flex items-center justify-centersm:footer-horizontal bg-[#101727] text-neutral-content p-20 w-full border">
       <div>
         <p>
           <span className='font-bold text-4xl pb-2'>Digitools</span>
@@ -39,7 +39,7 @@ const Footer = () => {
       </div>
 
       <div>
-        <h6 className="footer-title">Social Links</h6>
+        <h6 className="footer-title md:flex">Social Links</h6>
         <div className="grid grid-flow-col gap-4">
           <a> <AiFillInstagram /> </a>
           <a> <FaFacebookSquare /> </a>

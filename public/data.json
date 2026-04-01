@@ -1,0 +1,95 @@
+[
+  {
+    "id": "prod_01",
+    "name": "Starter Plan",
+    "description": "Perfect for individuals looking to build their first professional resume.",
+    "price": 0,
+    "period": "one-time",
+    "tag": "Free",
+    "tagType": "new",
+    "features": [
+      "5 basic templates",
+      "Export to PDF",
+      "Standard support"
+    ],
+    "icon": "lucide:sparkles"
+  },
+  {
+    "id": "prod_02",
+    "name": "Professional Pro",
+    "description": "Our most popular plan for active job seekers in the tech industry.",
+    "price": 15.99,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "100+ premium templates",
+      "ATS optimization",
+      "Unlimited PDF exports",
+      "Priority email support"
+    ],
+    "icon": "lucide:briefcase"
+  },
+  {
+    "id": "prod_03",
+    "name": "Enterprise Annual",
+    "description": "Full access for teams and career coaches with long-term goals.",
+    "price": 120.00,
+    "period": "yearly",
+    "tag": "Best Value",
+    "tagType": "best seller",
+    "features": [
+      "All Pro features",
+      "Custom branding",
+      "Team collaboration tools",
+      "Dedicated account manager"
+    ],
+    "icon": "lucide:shield-check"
+  },
+  {
+    "id": "prod_04",
+    "name": "Executive Suite",
+    "description": "Tailored for C-suite professionals and senior management roles.",
+    "price": 49.99,
+    "period": "monthly",
+    "tag": "Premium",
+    "tagType": "popular",
+    "features": [
+      "Executive templates",
+      "LinkedIn profile audit",
+      "1-on-1 career coaching session",
+      "Cover letter builder"
+    ],
+    "icon": "lucide:gem"
+  },
+  {
+    "id": "prod_05",
+    "name": "Student Kickstart",
+    "description": "Specially priced for current students and recent graduates.",
+    "price": 25.00,
+    "period": "one-time",
+    "tag": "Student Deal",
+    "tagType": "new",
+    "features": [
+      "Entry-level templates",
+      "Internship guide",
+      "Lifetime access to updates"
+    ],
+    "icon": "lucide:graduation-cap"
+  },
+  {
+    "id": "prod_06",
+    "name": "Freelance Monthly",
+    "description": "Flexible access for contractors and gig economy workers.",
+    "price": 12.50,
+    "period": "monthly",
+    "tag": "Flexible",
+    "tagType": "new",
+    "features": [
+      "Portfolio integration",
+      "Client-ready exports",
+      "Tax deduction tracker"
+    ],
+    "icon": "lucide:laptop"
+  }
+]
