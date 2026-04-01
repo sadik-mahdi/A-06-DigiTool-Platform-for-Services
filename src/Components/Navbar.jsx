@@ -11,12 +11,12 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <div className="navbar-center gap-2 md:gap-4 ">
-        <a className="text-sm font-bold text-[#101727]">Products</a>
-        <a className="text-sm font-bold text-[#101727]">Features</a>
-        <a className="text-sm font-bold text-[#101727]">Pricing</a>
-        <a className="text-sm font-bold text-[#101727]">Testimonials</a>
-        <a className="text-sm font-bold text-[#101727]">FAQ</a>
+      <div className="navbar-center gap-2 md:gap-4 text-xl font-bold">
+        <a className="text-[#101727]">Products</a>
+        <a className="text-[#101727]">Features</a>
+        <a className="text-[#101727]">Pricing</a>
+        <a className="text-[#101727]">Testimonials</a>
+        <a className="text-[#101727]">FAQ</a>
       </div>
       <div className="navbar-end gap-2">
         <button ><CiShoppingCart /></button>

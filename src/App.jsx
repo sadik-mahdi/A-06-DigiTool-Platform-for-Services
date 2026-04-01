@@ -34,15 +34,15 @@ function App() {
 
       <div className="tabs justify-center bg-transparent tabs-box mx-auto bg-blue">
         <input type="radio" 
-            name="my_tabs_1" 
-            className="tab rounded-full" 
-            aria-label="Products" 
-            defaultChecked
-            onClick={() => setActiveTab("Products")} 
-          />
+          name="my_tabs_1" 
+          className="tab rounded-full text-2xl border- text-black hover:bg-violet-500 hover:text-white" 
+          aria-label="Products" 
+          defaultChecked
+          onClick={() => setActiveTab("Products")} 
+        />
         <input type="radio" 
           name="my_tabs_1" 
-          className="tab rounded-full" 
+          className="tab rounded-full text-2xl text-black hover:bg-violet-500 hover:text-white" 
           aria-label="Cart" 
           onClick={() => setActiveTab("Cart")} 
         />
@@ -50,7 +50,7 @@ function App() {
 
       {activeTab === "Products" && <Tools toolsPromise = {toolsPromise} carts = {carts} setCart = {setCart} />}
 
-      {activeTab === "Cart" && <Cart carts = {carts} />}
+      {activeTab === "Cart" && <Cart carts = {carts} setCart={setCart}/>}
 
       <Steps />
 
