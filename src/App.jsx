@@ -21,39 +21,44 @@ const toolsPromise = getModels();
 function App() {
 
   const [activeTab, setActiveTab] = useState("Products");
-  console.log(activeTab);
+  const [carts, setCart] = useState([]);
 
 
   return (
     <>
-    <Navbar />
-    <Hero />
-    <Bar />
+      <Navbar />
 
-    <div className="tabs justify-center bg-transparent tabs-box mx-auto bg-blue">
-      <input type="radio" 
+      <Hero />
+
+      <Bar />
+
+      <div className="tabs justify-center bg-transparent tabs-box mx-auto bg-blue">
+        <input type="radio" 
+            name="my_tabs_1" 
+            className="tab rounded-full" 
+            aria-label="Products" 
+            defaultChecked
+            onClick={() => setActiveTab("Products")} 
+          />
+        <input type="radio" 
           name="my_tabs_1" 
           className="tab rounded-full" 
-          aria-label="Products" 
-          defaultChecked
-          onClick={() => setActiveTab("Products")} 
+          aria-label="Cart" 
+          onClick={() => setActiveTab("Cart")} 
         />
-      <input type="radio" 
-        name="my_tabs_1" 
-        className="tab rounded-full" 
-        aria-label="Cart(0)" 
-        onClick={() => setActiveTab("Cart")} 
-      />
-    </div>
+      </div>
 
-    {activeTab === "Products" && <Tools toolsPromise = {toolsPromise} />}
-    {activeTab === "Cart" && <Cart/>}
+      {activeTab === "Products" && <Tools toolsPromise = {toolsPromise} carts = {carts} setCart = {setCart} />}
 
+      {activeTab === "Cart" && <Cart carts = {carts} />}
 
-    <Steps />
-    <Pricing />
-    <Footer />
-    <FooterEnd />
+      <Steps />
+
+      <Pricing />
+
+      <Footer />
+      
+      <FooterEnd />
     </>
   )
 }

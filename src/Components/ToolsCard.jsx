@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 
-const ToolsCard = ({tool}) => {
+const ToolsCard = ({tool,carts, setCart}) => {
   const [isBuyNow, setIsBuyNow] = useState(false);
   const handleBuyNow = () => {
     setIsBuyNow(true)
+    setCart([...carts,tool]);
+    console.log(carts);
   }
 
   return (

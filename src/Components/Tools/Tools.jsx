@@ -1,7 +1,7 @@
 import React, { use } from 'react';
 import ToolsCard from '../ToolsCard';
 
-const Tools = ({toolsPromise}) => {
+const Tools = ({toolsPromise,carts, setCart}) => {
   const tools = use(toolsPromise);
 
   return (
@@ -16,7 +16,7 @@ const Tools = ({toolsPromise}) => {
       <div className='grid lg:grid-cols-3 md:grid-cols-2 gap-5 mt-10 '>
         {
           tools.map((tool) => (
-            <ToolsCard key={tool.id} tool={tool} />
+            <ToolsCard key={tool.id} tool={tool} carts = {carts} setCart = {setCart} />
           ))
         }
       </div>
