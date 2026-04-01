@@ -32,7 +32,7 @@ function App() {
 
       <Bar />
 
-      <div className="tabs justify-center bg-transparent tabs-box mx-auto bg-blue">
+      <div className="tabs justify-center bg-transparent tabs-box mx-auto  border w-60 rounded-full border-[#4f39f6]">
         <input type="radio" 
           name="my_tabs_1" 
           className="tab rounded-full text-2xl border- text-black hover:bg-violet-500 hover:text-white" 
@@ -43,7 +43,7 @@ function App() {
         <input type="radio" 
           name="my_tabs_1" 
           className="tab rounded-full text-2xl text-black hover:bg-violet-500 hover:text-white" 
-          aria-label="Cart" 
+          aria-label={`Cart(${carts.length})`} 
           onClick={() => setActiveTab("Cart")} 
         />
       </div>

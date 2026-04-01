@@ -7,6 +7,11 @@ const Cart = ({carts, setCart}) => {
     setCart([]);
   } 
 
+  const handleDelete = (cart) => {
+    const filterArray = carts.filter(c => c.id !== cart.id)
+    setCart(filterArray);
+  }
+
 
   return (
     <div className='p-10 mb-20'>
@@ -22,7 +27,7 @@ const Cart = ({carts, setCart}) => {
               <p className='text-2xl '>{cart.price}</p>
             </div>
             <div className='w-1/7 text-red-500'>
-              <button className='font-bold text-xl'>Remove</button>
+              <button onClick={ () => handleDelete(cart)} className='font-bold text-xl'>Remove</button>
             </div>
           </div>
         ))
